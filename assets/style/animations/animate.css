@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/*!* animate.css -http://daneden.me/animate * Version - 3.6.0 * Licensed under the MIT license - http://opensource.org/licenses/MIT * * Copyright (c) 2018 Daniel Eden*/
+.animated{
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both
+}
+.animated.infinite{
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/* ignore this */
+
+/* if removed then style will be broken for the most part */
+
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+  
+button {
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  border-radius: 3px;
+  padding: 23px 33px;
+  border: 3px solid transparent; }
+  button:active {
+    box-sizing: border-box;
+    transform: translateY(3px); }
+  button::after, button::before {
+    box-sizing: border-box;
+    border-radius: 3px; }
+
+.file-upload-button {
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  border-radius: 3px;
+  padding: 23px 33px;
+  border: 3px solid transparent; }
+  .file-upload-button:active {
+    box-sizing: border-box;
+    transform: translateY(3px); }
+  .file-upload-button::after, .file-upload-button::before {
+    box-sizing: border-box;
+    border-radius: 3px; }
+
+
+    
+ .material-bubble {
+  background-color: transparent;
+  color: rgb(204, 204, 204);
+  border: none;
+  overflow: hidden;
+  box-shadow: none; }
+  .material-bubble:hover {
+    color: #e6e6e6; }
+  .material-bubble::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffffff;
+    transition: opacity 0.3s, border 0.3s; }
+  .material-bubble:hover::before {
+    opacity: 0; }
+  .material-bubble::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(36, 36, 36);
+    border-color: transparent;
+    border-radius: 50%;
+    transform: translate(-10px, -70px) scale(0.1);
+    opacity: 0;
+    z-index: -1;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s; }
+  .material-bubble:hover::after {
+    opacity: 1;
+    transform-origin: 100px 100px;
+    transform: scale(1) translate(-10px, -70px); }
+
+    .material-bubble-input {
+      background-color: transparent;
+      color: rgb(204, 204, 204);
+      border: none;
+      overflow: hidden;
+      box-shadow: none; }
+      .material-bubble-input:hover {
+        color: #e6e6e6; }
+      .material-bubble-input::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ffffff;
+        transition: opacity 0.3s, border 0.3s; }
+      .material-bubble-input:hover::before {
+        opacity: 0; }
+      .material-bubble-input:hover::after {
+        opacity: 1;
+        transform-origin: 100px 100px;
+        transform: scale(1) translate(-10px, -70px); }

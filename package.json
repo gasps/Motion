@@ -1,0 +1,45 @@
+{
+  "name": "motion",
+  "author": "gasps",
+  "maintainer": "gasps",
+  "version": "1.0.0",
+  "description": "An advanced minecraft bot for 1.19.3 - 1.8.",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "winx64": "electron-builder build --win --x64",
+    "winx86": "electron-builder build --win --ia32",
+    "linux64": "electron-builder build --linux --x64",
+    "linux86": "electron-builder build --linux --ia32"
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.6.0",
+    "electron-store": "^8.1.0",
+    "mineflayer": "^4.8.1",
+    "node-fetch": "2.6.7",
+    "proxy-agent": "^5.0.0",
+    "socks": "^2.7.0"
+  },
+  "devDependencies": {
+    "electron": "^21.4.4",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.gasps.motion",
+    "productName": "Motion",
+    "copyright": "Copyright © 2022 gasps",
+    "win": {
+      "target": "portable",
+      "publisherName": "gasps",
+      "icon": "assets/icons/app/logo/icon-white.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "assets/icons/app/logo/icon-white.png",
+      "category": "Utility"
+    }
+  }
+}
